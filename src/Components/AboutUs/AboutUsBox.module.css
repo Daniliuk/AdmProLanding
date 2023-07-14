@@ -1,0 +1,35 @@
+.AboutUsContainer{
+    background-color: #87CEEB;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 4%;
+    padding: 1%;
+
+}
+.Top{
+    background-color: #14b0ed;
+    margin-bottom: 1%;
+
+
+}
+.Bottom{
+    background-color: #638998;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%;
+}
+.ImageBox{
+    background-image: url("./AboutAsCat.jpeg") ;
+    width: 703px;
+    height: 463px;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.ButtonBox{
+    display: grid;
+    place-items: center;
+    background-color: #035d80;
+}

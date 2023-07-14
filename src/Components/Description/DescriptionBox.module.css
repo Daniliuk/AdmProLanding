@@ -1,0 +1,32 @@
+.DescriptionContainer{
+    background-color: #8b84bc;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 4%;
+    padding: 1%;
+}
+.Top{
+background-color: #7d6bf3;
+margin-bottom: 1%;
+}
+.Bottom{
+    background-color: #4b4090;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5%;
+}
+.ImageBox{
+    background-image: url("./DescriptionCat.jpeg") ;
+    width: 703px;
+    height: 463px;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.ButtonBox{
+    display: grid;
+    place-items: center;
+    background-color: #290bea;
+}
