@@ -41,12 +41,12 @@
     display: grid;
     grid-area: aboutUs;
     grid-template-areas:
-        "textBox textBox textBox"
         "imageBox imageBox imageBox"
+        "textBox textBox textBox"
         ". buttonBox .";
     /* gap: 10px; */
     /* grid-template-columns: minmax(150px, 703px) auto; */
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
     gap: 5%;
     padding: 1%;
 }
@@ -58,10 +58,13 @@
         margin-left: 3%;
         margin-right: 3%;
         grid-area: aboutUs;
-        grid-template-areas:
+        /* grid-template-areas:
             "textBox textBox textBox"
-            "buttonBox imageBox imageBox";
-        grid-template-rows: 1fr 4fr;
+            "buttonBox imageBox imageBox"; */
+        grid-template-rows: 4fr 1fr;
+        grid-template-areas: 
+        "imageBox imageBox imageBox"
+        "buttonBox textBox textBox";
     }
 }
 
