@@ -11,10 +11,13 @@ function HeaderBox() {
                 </div>
                     Admp.Pro
             </div>
-            <div className='CentrlBox'>
-                {/* Пустой див для удобства */}
+            <div className={HeaderCss.CentrlBox}>
+                <div>
+                professional marketplace advisor
+                </div>
             </div>
             <div className={HeaderCss.MenuBox}>
+                <div className={HeaderCss.MenuForm}></div>
                 MenuBox
             </div>
 

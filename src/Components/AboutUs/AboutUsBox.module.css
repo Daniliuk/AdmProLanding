@@ -34,7 +34,8 @@
 /* --------------------------- */
 
 .AboutUsContainer {
-    background-color: #87CEEB;
+    /* background-color: #87CEEB; */
+    border: solid;
     margin-left: 1%;
     margin-right: 1%;
     display: grid;
@@ -47,12 +48,12 @@
     /* grid-template-columns: minmax(150px, 703px) auto; */
     grid-template-rows: 1fr 4fr 1fr;
     gap: 5%;
-
+    padding: 1%;
 }
 
 @media (min-width: 640px) {
     .AboutUsContainer {
-        background-color: #87CEEB;
+        /* background-color: #87CEEB; */
         display: grid;
         margin-left: 3%;
         margin-right: 3%;
@@ -76,7 +77,7 @@
 }
 
 .TextBox {
-    background-color: #14b0ed;
+    /* background-color: #14b0ed; */
     /* margin-bottom: 1%; */
     grid-area: textBox;
 }
@@ -84,6 +85,6 @@
 .ButtonBox{
     display: grid;
     place-items: center;
-    background-color: #035d80;
+    /* background-color: #035d80; */
     grid-area: buttonBox;
 }

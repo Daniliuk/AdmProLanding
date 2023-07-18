@@ -6,7 +6,9 @@ function SubscriptionBox() {
         <div className={SubscriptionCss.SubscriptionContainer}>
             {/* <div className={SubscriptionCss.Top}> */}
                 <div className={SubscriptionCss.TextBox}>
+                    <h3>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat in laborum eaque laudantium voluptates est eos unde similique doloremque quo, delectus, mollitia enim eveniet adipisci dolore illo animi. Ipsum illum culpa laudantium earum veritatis autem unde, cumque atque architecto aliquid reiciendis delectus dolorum sed iure est. Iusto eos quos architecto possimus quas vel. Molestiae eaque fugiat saepe a facilis voluptates.
+                    </h3>
                 </div>
             {/* </div> */}
             {/* <div className={SubscriptionCss.Bottom}> */}

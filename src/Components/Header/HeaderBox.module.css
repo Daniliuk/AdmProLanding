@@ -29,7 +29,10 @@
 /* ------------------------- */
 
 .HeaderContainer {
-    background-color: #DDA0DD;
+    position: sticky;
+    top: 0;
+    /* border: solid; */
+    /* background-color: #DDA0DD; */
     margin: 1% 1% 0 1%;
     display: grid;
     grid-area: header;
@@ -38,19 +41,25 @@
 }
 
 .LogoBox {
-    background-color: #ca62ca;
+    /* background-color: #ca62ca; */
+    /* border: solid; */
     display: grid;
     place-items: center;
     grid-area: logoBox;
 }
 
 .CentrlBox {
+    display: grid;
+    place-items: center;
     grid-area: empty;
 }
 
 .MenuBox {
-    background-color: #9a709a;
+    /* background-color: #9a709a; */
+    /* border: solid; */
     grid-area: menuBox;
+    display: grid;
+    place-items: center;
 }
 
 .LogoForm {
@@ -61,4 +70,10 @@
     background-size: cover;
     background-position: center;
     display: inline-block;
+}
+
+.MenuForm{
+    background-color: wheat;
+    width: 50px;
+    height: 50px;
 }

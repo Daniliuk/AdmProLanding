@@ -35,7 +35,8 @@
 /* --------------------------------- */
 
 .SubscriptionContainer{
-    background-color: #FA8072;
+    /* background-color: #FA8072; */
+    border: solid;
     margin-left: 1%;
     margin-right: 1%;
     display: grid;
@@ -47,11 +48,13 @@
     /* gap: 10px; */
     /* grid-template-columns: minmax(150px, 703px) auto; */
     grid-template-rows: 1fr 4fr 1fr;
+    gap: 5%;
+    padding: 1%;
 }
 
 @media (min-width: 640px) {
     .SubscriptionContainer {
-        background-color: #FA8072;
+        /* background-color: #FA8072; */
         margin-left: 3%;
         margin-right: 3%;
         display: grid;
@@ -61,13 +64,15 @@
             "imageBox imageBox buttonBox";
         /* gap: 10px; */
         grid-template-rows: 1fr 4fr;
-        gap: 5%;
-
     }
+}
+h3{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 18px;
 }
 
 .TextBox{
-    background-color: #b57e78;
+    /* background-color: #b57e78; */
     /* margin-bottom: 1%; */
     grid-area: textBox;
 }
@@ -86,6 +91,6 @@
 .ButtonBox{
     display: grid;
     place-items: center;
-    background-color: #e84230;
+    /* background-color: #e84230; */
     grid-area: buttonBox;
 }

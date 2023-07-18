@@ -43,7 +43,8 @@
 /* -------------------------- */
 
 .TutorialContainer{
-    background-color: #008080;
+    /* background-color: #008080; */
+    border: solid;
     margin-left: 1%;
     margin-right: 1%;
     display: grid;
@@ -54,7 +55,7 @@
     ". tutorialButton .";
     grid-auto-rows: 5fr 2fr 1fr;
     gap: 5%;
-
+    padding: 1%;
 }
 
 @media (min-width: 640px){
@@ -76,16 +77,20 @@
   display: inline-block;
   grid-area: tutorialImage;
 }
+h2{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
 
 .TextBox{
-    background-color: #627979;
+    /* background-color: #627979; */
     /* display: grid;
     place-items: center; */
     grid-area: tutorialText;
 }
 
 .ButtonBox{
-    background-color: #0a5454;
+    /* background-color: #0a5454; */
     display: grid;
     place-items: center;
     grid-area: tutorialButton;

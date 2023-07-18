@@ -5,17 +5,19 @@ function DescriptionBox() {
         <div className={DescriptionCss.DescriptionContainer}>
             {/* <div className={DescriptionCss.Top}> */}
                 <div className={DescriptionCss.TextBox}>
+                    <h1>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus facilis corrupti, ab ullam expedita illum quos numquam itaque, perferendis reprehenderit? Laboriosam voluptatum, assumenda saepe provident molestias repudiandae exercitationem, quod ut unde ad voluptas ducimus quae possimus aliquam, reprehenderit necessitatibus!
+                    </h1>
                 </div>
             {/* </div> */}
             {/* <div className={DescriptionCss.Bottom}> */}
                 <div className={DescriptionCss.ImageBox}>
-                    Ddescription image
+                    {/* Ddescription image */}
                 </div>
 
 
                 <div className={DescriptionCss.ButtonBox}>
-                    <button>Link on the bot</button>
+                    <button className={DescriptionCss.DiscriptionButton}>Link on the bot</button>
                 </div>
             {/* </div> */}
 
