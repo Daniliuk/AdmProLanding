@@ -1,21 +1,14 @@
-
+/* 
 .HeaderContainer {
     background-color: #DDA0DD;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     margin: 0px 1%;
     margin-top: 1%;
-
-    /* grid-template-columns: minmax(100px,200px) minmax(100px,200px); */
-    /* column-gap: 200px; */
 }
 
 .LogoBox {
     background-color: #ca62ca;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-
     display: grid;
     place-items: center;
 }
@@ -31,9 +24,41 @@
   background-size: cover;
   background-position: center;
   display: inline-block;
-} 
-/* .LogoImg {
+}  */
 
+/* ------------------------- */
+
+.HeaderContainer {
+    background-color: #DDA0DD;
+    margin: 1% 1% 0 1%;
+    display: grid;
+    grid-area: header;
+    grid-template-areas:
+        "logoBox empty empty empty empty menuBox";
+}
+
+.LogoBox {
+    background-color: #ca62ca;
+    display: grid;
+    place-items: center;
+    grid-area: logoBox;
+}
+
+.CentrlBox {
+    grid-area: empty;
+}
+
+.MenuBox {
+    background-color: #9a709a;
+    grid-area: menuBox;
+}
+
+.LogoForm {
+    background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Header/BetaLogo.jpg");
     width: 90px;
     height: 90px;
-} */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}

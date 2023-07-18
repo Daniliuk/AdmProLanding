@@ -1,13 +1,11 @@
-.SubscriptionContainer{
+/* .SubscriptionContainer{
     background-color: #FA8072;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0px 4%;
     padding: 1%;
-    
-
-}
-.Top{
+} */
+/* .Top{
     background-color: #f0b6b0;
     margin-bottom: 1%;
 
@@ -18,8 +16,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 5%;
-}
-.ImageBox{
+} */
+/* .ImageBox{
     background-image: url("./SubscriptionCat.avif") ;
     width: 703px;
     height: 463px;
@@ -27,9 +25,67 @@
   background-size: cover;
   background-position: center;
   display: inline-block;
+} */
+/* .ButtonBox{
+    display: grid;
+    place-items: center;
+    background-color: #e84230;
+} */
+
+/* --------------------------------- */
+
+.SubscriptionContainer{
+    background-color: #FA8072;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: grid;
+    grid-area: subscript;
+    grid-template-areas:
+        "textBox textBox textBox"
+        "imageBox imageBox imageBox"
+        ". buttonBox .";
+    /* gap: 10px; */
+    /* grid-template-columns: minmax(150px, 703px) auto; */
+    grid-template-rows: 1fr 4fr 1fr;
 }
+
+@media (min-width: 640px) {
+    .SubscriptionContainer {
+        background-color: #FA8072;
+        margin-left: 3%;
+        margin-right: 3%;
+        display: grid;
+        grid-area: subscript;
+        grid-template-areas:
+            "textBox textBox textBox"
+            "imageBox imageBox buttonBox";
+        /* gap: 10px; */
+        grid-template-rows: 1fr 4fr;
+        gap: 5%;
+
+    }
+}
+
+.TextBox{
+    background-color: #b57e78;
+    /* margin-bottom: 1%; */
+    grid-area: textBox;
+}
+
+.ImageBox{
+    background-image: url("./SubscriptionCat.avif") ;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  grid-area: imageBox;
+}
+
 .ButtonBox{
     display: grid;
     place-items: center;
     background-color: #e84230;
+    grid-area: buttonBox;
 }

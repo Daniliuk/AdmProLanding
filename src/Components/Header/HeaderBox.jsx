@@ -1,6 +1,7 @@
 import HeaderCss from './HeaderBox.module.css'
 // import Logo from './BetaLogo.jpg'
 
+
 function HeaderBox() {
     return (
         <div className={HeaderCss.HeaderContainer}>
