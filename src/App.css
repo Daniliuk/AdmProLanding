@@ -13,7 +13,7 @@
     display: grid;
     grid-template-areas:
         "header"
-        "testing"
+        /* "testing" */
         "description"
         "tutorial"
         "subscript"

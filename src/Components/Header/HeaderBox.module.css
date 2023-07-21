@@ -32,12 +32,13 @@
     position: sticky;
     top: 0;
     /* border: solid; */
-    background-color: #DDA0DD;
-    margin: 1% 1% 0 1%;
+    /* background-color: #DDA0DD; */
+    margin: 0% 1% 0 1%;
     display: grid;
     grid-area: header;
     grid-template-areas:
-        "logoBox empty empty empty empty menuBox";
+        "logoBox empty menuBox";
+    grid-template-columns: 140px 4fr 140px;
 }
 
 .LogoBox {
@@ -64,8 +65,8 @@
 
 .LogoForm {
     background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Header/BetaLogo.jpg");
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

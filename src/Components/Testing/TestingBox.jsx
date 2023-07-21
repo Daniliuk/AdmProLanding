@@ -1,5 +1,6 @@
 import TestingBoxCss from './TestingBox.module.css'
 import Pictur1 from './svgTesting.png'
+import Pictur2 from './DescriptionCat.jpeg'
 
 function TestingBox() {
     return (

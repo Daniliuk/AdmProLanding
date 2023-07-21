@@ -1,4 +1,5 @@
 import DescriptionCss from './DescriptionBox.module.css'
+import Pictur1 from './svgTesting.png'
 
 function DescriptionBox() {
     return (
@@ -12,9 +13,8 @@ function DescriptionBox() {
             {/* </div> */}
             {/* <div className={DescriptionCss.Bottom}> */}
                 <div className={DescriptionCss.ImageBox}>
-                    {/* Ddescription image */}
+                    <img className={DescriptionCss.Pictur1} src={Pictur1} alt="" />
                 </div>
-
 
                 <div className={DescriptionCss.ButtonBox}>
                     <button className={DescriptionCss.DiscriptionButton}>Link on the bot</button>
