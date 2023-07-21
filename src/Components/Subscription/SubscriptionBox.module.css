@@ -1,60 +1,62 @@
-/* .SubscriptionContainer{
-    background-color: #FA8072;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px 4%;
-    padding: 1%;
-} */
-/* .Top{
-    background-color: #f0b6b0;
-    margin-bottom: 1%;
-
+/* .SubscriptionContainer {
+  background-color: #fa8072;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0px 4%;
+  padding: 1%;
 }
-.Bottom{
+
+.Top {
+  background-color: #f0b6b0;
+  margin-bottom: 1%;
+}
+
+.Bottom {
+  background-color: #b05d53;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: minmax(256px, 512px);
+  column-gap: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .Bottom {
     background-color: #b05d53;
     padding: 1%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     column-gap: 5%;
-} */
-/* .ImageBox{
-    background-image: url("./SubscriptionCat.avif") ;
-    width: 703px;
-    height: 463px;
-    background-repeat: no-repeat;
+  }
+}
+.ImageBox {
+  background-image: url("./SubscriptionCat.avif") ;
+  background-color: #a57974;
+  position: relative;
+
+}
+.SubscriptionImg {
+  background-image: url("./SubscriptionCat.avif");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: inline-block;
-} */
-/* .ButtonBox{
-    display: grid;
-    place-items: center;
-    background-color: #e84230;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.ButtonBox {
+  display: grid;
+  place-items: center;
+  background-color: #e84230;
 } */
 
 /* --------------------------------- */
 
-.SubscriptionContainer{
-    /* background-color: #FA8072; */
-    border: solid;
-    margin-left: 1%;
-    margin-right: 1%;
-    display: grid;
-    grid-area: subscript;
-    grid-template-areas:
-        "textBox textBox textBox"
-        "imageBox imageBox imageBox"
-        ". buttonBox .";
-    /* gap: 10px; */
-    /* grid-template-columns: minmax(150px, 703px) auto; */
-    grid-template-rows: 1fr 4fr 1fr;
-    gap: 5%;
-    padding: 1%;
-}
-
-@media (min-width: 640px) {
     .SubscriptionContainer {
-        /* background-color: #FA8072; */
         margin-left: 3%;
         margin-right: 3%;
         display: grid;
@@ -62,8 +64,25 @@
         grid-template-areas:
             "textBox textBox textBox"
             "imageBox imageBox buttonBox";
-        /* gap: 10px; */
-        grid-template-rows: 1fr 4fr;
+        /* grid-template-rows: 1fr minmax(277.5px , 512px); */
+        grid-template-rows: 1fr 5fr;
+        border: solid;
+        gap: 5%;
+        padding: 1%;
+    }
+
+@media screen and (max-width: 767px) {
+    .SubscriptionContainer{
+        margin-left: 1%;
+        margin-right: 1%;
+        display: grid;
+        grid-area: subscript;
+        grid-template-areas:
+            "textBox textBox textBox"
+            "imageBox imageBox imageBox"
+            ". buttonBox .";
+            grid-template-rows: 1fr 3fr 1fr;
+ 
     }
 }
 h3{
@@ -72,25 +91,33 @@ h3{
 }
 
 .TextBox{
-    /* background-color: #b57e78; */
-    /* margin-bottom: 1%; */
     grid-area: textBox;
 }
 
 .ImageBox{
-    background-image: url("./SubscriptionCat.avif") ;
-    width: auto;
-    height: auto;
-    background-repeat: no-repeat;
+    padding: 0px 0px 50% 0px;
+    overflow: hidden;
+    position: relative;
+    /* width: (767px - 36.3%);
+    height: 100%; */
+    /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: inline-block;
+  display: inline-block; */
   grid-area: imageBox;
+}
+.SubscriptionImg{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .ButtonBox{
     display: grid;
     place-items: center;
-    /* background-color: #e84230; */
     grid-area: buttonBox;
+    
 }

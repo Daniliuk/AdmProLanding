@@ -1,43 +1,3 @@
-/* .DescriptionContainer{
-    background-color: #8b84bc;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px 4%;
-    padding: 1%;
-    gap: 1%;
-}
-
-.Top{
-background-color: #7d6bf3;
-margin-bottom: 1%;
-}
-.Bottom{
-    background-color: #4b4090;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-auto-flow: row dense;
-    gap: 1%;
-}
-.ImageBox{
-    background-image: url("./DescriptionCat.jpeg") ;
-    width: 520px;
-    height: 400px;
-     width: auto;
-    height: auto; 
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
-}
-
-.ButtonBox{
-    display: grid;
-    place-items: center;
-    background-color: #290bea;
-} */
-
-/* ------------------------ */
 
 .DescriptionContainer {
     /* background-color: #8b84bc; */
@@ -52,7 +12,7 @@ margin-bottom: 1%;
     ". buttonBox .";
     /* gap: 10px; */
     /* grid-template-columns: minmax(150px, 703px) auto; */
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     gap: 5%;
     padding: 1%;
     border: solid;
@@ -73,36 +33,77 @@ margin-bottom: 1%;
             "textBox textBox textBox"
             "imageBox imageBox buttonBox";
         /* gap: 10px; */
-        grid-template-rows: 1fr 4fr;
+        grid-template-rows: 1fr 3fr;
     }
 }
 
-h1{
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    color: #fff;
-}
 .TextBox {
-    padding: 10px;
+    padding: 1%;
     /* background-color: #7d6bf3; */
     border-radius: 10px;
     background: linear-gradient(342deg, rgba(2,0,36,1) 0%, rgba(187,113,184,0.871608018207283) 38%, rgba(0,212,255,1) 100%);
     grid-area: textBox;
 }
 
+.DescriptionText{
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.TextEdit{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
 .ImageBox {
-    background-image: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/svgTesting.png);
-    /* background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/DescriptionCat.jpeg"); */
-    width: 412px;
-    height: 412px;
-    /* width: auto;
-    height: auto; */
+    /* background-image: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/svgTesting.png); */
+    /* width: 412px; */
+    width: 100%;
+    height: auto;
+    /* max-height: 540px; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: inline-block;
+    display: inline-block; 
+    
     grid-area: imageBox;
     justify-self: center;
+    /* position: relative;
+    padding-top: 0.1%; */
+}
+
+.DescriptionImg{
+    background-image: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/svgTesting.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block; 
+    width: 420px;
+    height: auto; 
+    /* object-fit: cover; */
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+} 
+@media screen and (min-width: 640px) and (max-width:1023px) {
+    .DescriptionContainer{
+        margin-left: 5%;
+        margin-right: 5%;
+    display: grid;
+    grid-area: description;
+    grid-template-areas:
+    "textBox textBox textBox"
+    "imageBox imageBox imageBox"
+    ". buttonBox .";
+    grid-template-rows: 1fr 2fr 1fr;
+    }
+    .DescriptionImg{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+    } 
 }
 
 .ButtonBox {

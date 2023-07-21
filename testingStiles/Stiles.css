@@ -49,23 +49,18 @@
 
 
 /* .DescriptionContainer {
-    background-color: #8b84bc;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    margin: 0px 4%;
-    padding: 1%;
-} */
-
-.DescriptionContainer {
     display: grid;
     grid-template-areas:
         "textBox textBox textBox"
         "imageBox imageBox imageBox"
         ". buttonBox .";
     gap: 10px;
-    /* grid-template-columns: minmax(150px, 703px) auto; */
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+} */
+.DescriptionContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
 }
 
 @media (min-width: 640px) {
@@ -81,34 +76,84 @@
 
 .TextBox {
     background-color: #7d6bf3;
-    /* margin-bottom: 1%; */
     grid-area: textBox;
+    font-size: 18px;
 }
 
-/* .Bottom {
-    background-color: #4b4090;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 5%;
-} */
-
 .ImageBox {
-    background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/DescriptionCat.jpeg");
+    /* background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/DescriptionCat.jpeg"); */
     /* width: 703px;
     height: 463px; */
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block; */
+    border-color: red;
+    grid-area: imageBox;
+    /* position: relative; */
+    /* width: calc(210px + (100% - 220px)/12*6); */
+    font-size: 18px;
+    width: 100%;
+    height: 20em;
+    padding: 0.3%;
+    /* padding-top: 56.25%;  */
+    /* height: 50%;
+    width: 100%; */
+    /* max-width: 720px; */
+}
+
+.wrapper{
+    background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/svgTesting.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: inline-block;
-    grid-area: imageBox;
+    width: 80%;
+    height: 100%;
+} 
+.img1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
-
 .ButtonBox {
     display: grid;
     place-items: center;
     background-color: #290bea;
     grid-area: buttonBox;
+}
+
+/* ------------------------- */
+.div1{
+    width: calc(200px + (100% - 220px)/12*6);
+}
+.div2{
+    height: 0;
+    padding-bottom: 135%;
+    position: relative;
+    overflow: hidden;
+}
+.div3{
+    top: 0;
+    bottom: 0;
+}
+.div4{
+    overflow: hidden;
+}
+.div5{
+    background-image: radial-gradient(circle at top left, #f5f5f5, #c9c9c9);
+}
+.imgTest{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }

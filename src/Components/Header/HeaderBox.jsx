@@ -12,9 +12,9 @@ function HeaderBox() {
                     Admp.Pro
             </div>
             <div className={HeaderCss.CentrlBox}>
-                <div>
+                {/* <div>
                 professional marketplace advisor
-                </div>
+                </div> */}
             </div>
             <div className={HeaderCss.MenuBox}>
                 <div className={HeaderCss.MenuForm}></div>

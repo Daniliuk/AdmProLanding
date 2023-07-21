@@ -9,10 +9,10 @@ function App() {
   return (
     <div className = "MainAppContainer"> 
       <HeaderBox/>
-      <DescriptionBox/>
-      <TutorialBox/>
+      {/* <DescriptionBox/> */}
+      {/* <TutorialBox/> */}
       <SubscriptionBox/>
-      <AboutUsBox/>
+      {/* <AboutUsBox/> */}
     </div>
   );
 }
