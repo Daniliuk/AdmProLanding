@@ -13,12 +13,13 @@
     display: grid;
     grid-template-areas:
         "header"
+        "testing"
         "description"
         "tutorial"
         "subscript"
         "aboutUs";
     grid-template-rows:
         auto auto;
-    gap: 2%;
+    gap: 1.2%;
     
 }

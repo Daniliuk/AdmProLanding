@@ -6,7 +6,7 @@ function DescriptionBox() {
             {/* <div className={DescriptionCss.Top}> */}
                 <div className={DescriptionCss.TextBox}>
                     <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus facilis corrupti, ab ullam expedita illum quos numquam itaque, perferendis reprehenderit? Laboriosam voluptatum, assumenda saepe provident molestias repudiandae exercitationem, quod ut unde ad voluptas ducimus quae possimus aliquam, reprehenderit necessitatibus!
+                    Adm.Pro - Лучший телеграмм-бот для управления рекламой и аналитики на Wildberries
                     </h1>
                 </div>
             {/* </div> */}

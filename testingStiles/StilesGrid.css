@@ -31,14 +31,37 @@ footer{
     grid-area: foot;
     background-color: red;
 } */
-.Main{
+/* .Main{
     display: grid;
     grid-template-areas: 
     "head head head"
-    "side content content"
-    "foot foot foot";
-    grid-template-rows: 50px auto 50px;
-    gap: 10px;
+    "sidebar sidebar button" ;
+    grid-template-rows: 1fr 3fr;
+    gap: 1%;
+}
+@media screen and (max-width: 767px) {
+    .Main{
+        display: grid;
+        grid-template-areas: 
+        "head head head"
+        "sidebar sidebar sidebar" 
+        ". button ." ;
+        grid-template-rows: 1fr 3fr 1fr;
+        gap: 1%;
+    }
+} */
+.Main{
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "bottom" ;
+    grid-template-rows: 1fr 3fr;
+    gap: 1%;
+}
+.bottom{
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
 }
 
 .Header{
@@ -50,18 +73,19 @@ footer{
 .Sidebar{
     display: grid;
     place-items: center;
-    grid-area: content;
+    /* grid-area: sidebar; */
     background-color: blue;
 }
 .Content{
     display: grid;
     place-items: center;
-    grid-area: side;
+    /* grid-area: button; */
     background-color: green;
 }
-.Footer{
+/* .Footer{
     display: grid;
     place-items: center;
     grid-area: foot;
     background-color: red;
-}
+} */
+/* ---------------------- */
