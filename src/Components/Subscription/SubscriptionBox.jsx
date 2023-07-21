@@ -1,5 +1,5 @@
 import SubscriptionCss from './SubscriptionBox.module.css'
-import Pictur3 from './SubscriptionCat.avif'
+import PicturSubscription from './svgTesting.png'
 
 
 function SubscriptionBox() {
@@ -13,7 +13,7 @@ function SubscriptionBox() {
             {/* </div> */}
             {/* <div className={SubscriptionCss.Bottom}> */}
                 <div className={SubscriptionCss.ImageBox}>
-                    <img className={SubscriptionCss.Pictur3} src={Pictur3} alt="" />
+                    <img className={SubscriptionCss.PicturSubscription} src={PicturSubscription} alt="" />
                 </div>
 
                 <div className={SubscriptionCss.ButtonBox}>

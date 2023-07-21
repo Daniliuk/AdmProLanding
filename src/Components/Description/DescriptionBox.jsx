@@ -1,5 +1,5 @@
 import DescriptionCss from './DescriptionBox.module.css'
-import Pictur1 from './svgTesting.png'
+import PicturDescription from './svgTesting.png'
 
 function DescriptionBox() {
     return (
@@ -13,7 +13,7 @@ function DescriptionBox() {
             {/* </div> */}
             {/* <div className={DescriptionCss.Bottom}> */}
                 <div className={DescriptionCss.ImageBox}>
-                    <img className={DescriptionCss.Pictur1} src={Pictur1} alt="" />
+                    <img className={DescriptionCss.PicturDescription} src={PicturDescription} alt="" />
                 </div>
 
                 <div className={DescriptionCss.ButtonBox}>
@@ -24,4 +24,5 @@ function DescriptionBox() {
         </div>
     );
 }
+
 export default DescriptionBox;

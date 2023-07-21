@@ -39,35 +39,36 @@ margin-bottom: 1%;
 
 /* ------------------------ */
 
-.DescriptionContainer {
-    /* background-color: #8b84bc; */
-    margin-left: 3%;
-    margin-right: 3%;
-    display: grid;
-    grid-area: description;
-    grid-template-areas:
-    "textBox textBox textBox"
-    "imageBox imageBox imageBox"
-    ". buttonBox .";
-    grid-template-rows: 1fr 3fr 1fr;
-    gap: 5%;
-    padding: 1%;
-    border: solid;
-    border-color: #9c4598;
-    border-radius: 10px;
-    box-shadow: 5px 8px 4px rgba(2,245,255,1);  
-}
-
-@media (min-width: 767px) {
     .DescriptionContainer {
+        /* background-color: #8b84bc; */
         display: grid;
-        margin-left: 10%;
-        margin-right: 10%;
+        /* margin-left: 10%; */
+        margin-right: 3%;
         grid-area: description;
+        display: grid;
         grid-template-areas:
             "textBox textBox textBox"
             "imageBox imageBox buttonBox";
         grid-template-rows: 1fr 3fr;
+        gap: 1%;
+        padding: 1%;
+        /* border: solid;
+        border-color: #9c4598;
+        border-radius: 10px;
+        box-shadow: 5px 8px 4px rgba(2,245,255,1);   */
+    }
+
+
+@media screen and (max-width: 767px) {
+    .DescriptionContainer {
+        margin-left: 3%;
+        margin-right: 3%;
+        grid-area: description;
+        grid-template-areas:
+        "textBox textBox textBox"
+        "imageBox imageBox imageBox"
+        ". buttonBox .";
+        grid-template-rows: 1fr 3fr 1fr;
     }
 }
 
@@ -87,7 +88,7 @@ h1{
 
 .ImageBox {
     /* background-image: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/svgTesting.png); */
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     /* background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +98,7 @@ h1{
     justify-self: center;
 }
 
-.Pictur1{
+.PicturDescription{
     width: 100%;
     height: 100%;
     object-fit: contain;

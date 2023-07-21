@@ -42,8 +42,8 @@
 
 /* -------------------------- */
 
-.TutorialContainer{
-    /* background-color: #008080; */
+/* .TutorialContainer{
+    background-color: #008080;
     border: solid;
     margin-left: 3%;
     margin-right: 3%;
@@ -59,12 +59,32 @@
     border-color: #9c4598;
     border-radius: 10px;
     box-shadow: 5px 8px 4px rgba(2,245,255,1);  
-}
+} */
 
-@media (min-width: 767px){
+
     .TutorialContainer{
+        /* background-color: #008080; */
         margin-left: 10%;
         margin-right: 10%;
+        display: grid;
+        grid-area: tutorial;
+        grid-template-areas: 
+        "tutorialImage tutorialImage tutorialImage "
+        "tutorialText tutorialText tutorialText"
+        ". tutorialButton .";
+        grid-auto-rows: 1fr 0.25fr 0.3fr;
+        gap: 5%;
+        padding: 1%;
+        /*border: solid;
+        border-color: #9c4598;
+        border-radius: 10px;
+        box-shadow: 5px 8px 4px rgba(2,245,255,1);  */
+    }
+
+@media screen and (max-width: 767px) {
+    .TutorialContainer{
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
 
@@ -96,7 +116,7 @@ h2{
 
 }
 
-.Pictur4{
+.PicturTutorial{
     width: 100%;
     height: 100%;
     object-fit: contain;

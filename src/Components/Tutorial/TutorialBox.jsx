@@ -1,5 +1,5 @@
 import TutorialCss from './TutorialBox.module.css'
-import Pictur4 from './TutorialCat.jpeg'
+import PicturTutorial from './svgTesting.png'
 
 
 function TutorialBox() {
@@ -7,7 +7,7 @@ function TutorialBox() {
         <div className={TutorialCss.TutorialContainer}>
             {/* <div className={TutorialCss.Top}> */}
                 <div className={TutorialCss.ImageBox}>
-                    <img className={TutorialCss.Pictur4} src={Pictur4} alt="" />
+                    <img className={TutorialCss.PicturTutorial} src={PicturTutorial} alt="" />
                 </div>
             {/* </div> */}
             {/* <div className={TutorialCss.Bottom}> */}
