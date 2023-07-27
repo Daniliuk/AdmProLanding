@@ -64,7 +64,7 @@
 }
 
 .LogoForm {
-    background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Header/BetaLogo.jpg");
+    background-image: url("/Users/daniliyk/Documents/LendingAdmPro/admpro/src/MainPage/Header/BetaLogo.jpg");
     width: 70px;
     height: 70px;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@
 }
 
 .MenuForm{
-    background-color: wheat;
+    /* background-color: wheat; */
     width: 50px;
     height: 50px;
 }

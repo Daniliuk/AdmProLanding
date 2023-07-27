@@ -1,4 +1,5 @@
 import HeaderCss from './HeaderBox.module.css'
+import DropMenu from './DropMenu.svg'
 // import Logo from './BetaLogo.jpg'
 
 
@@ -13,12 +14,13 @@ function HeaderBox() {
             </div>
             <div className={HeaderCss.CentrlBox}>
                 <div>
-                professional marketplace advisor
+                    {/* professional marketplace advisor */}
                 </div>
             </div>
             <div className={HeaderCss.MenuBox}>
-                <div className={HeaderCss.MenuForm}></div>
-                MenuBox
+                <div className={HeaderCss.MenuForm}>
+                    <img src={DropMenu} alt="" />
+                </div>
             </div>
 
         </div>

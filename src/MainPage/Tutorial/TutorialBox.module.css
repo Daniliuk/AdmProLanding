@@ -1,71 +1,11 @@
-/* .TutorialContainer{
-    background-color: #008080;
-    margin: 0px 4%;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(auto, auto);
-    row-gap: 1%;
-    padding-top: 1%;
-} */
-/* .Top{
-    background-color: #333838;
-    display: grid;
-    place-items: center;
-} */
-/* .Bottom{
-    background-color: #23eaea;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    row-gap: 10%;
-    padding: 1%;
-} */
-/* .ImageBox{
-    background-image: url("./TutorialCat.jpeg") ;
-    width: 700px;
-    height: 650px;
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
-} */
-/* .TextBox{
-    background-color: #627979;
-    display: grid;
-    place-items: center;
-} */
-/* .ButtonBox{
-    background-color: #0a5454;
-    display: grid;
-    place-items: center;
-} */
 
 /* -------------------------- */
-
-/* .TutorialContainer{
-    background-color: #008080;
-    border: solid;
-    margin-left: 3%;
-    margin-right: 3%;
-    display: grid;
-    grid-area: tutorial;
-    grid-template-areas: 
-    "tutorialImage tutorialImage tutorialImage "
-    "tutorialText tutorialText tutorialText"
-    ". tutorialButton .";
-    grid-auto-rows: 1fr 0.25fr 0.3fr;
-    gap: 5%;
-    padding: 1%;
-    border-color: #9c4598;
-    border-radius: 10px;
-    box-shadow: 5px 8px 4px rgba(2,245,255,1);  
-} */
-
-
     .TutorialContainer{
         /* background-color: #008080; */
-        margin-left: 10%;
-        margin-right: 10%;
+        /* background-color: rgba(185, 184, 181, 64); */
+        background-color: #f4f7fc;
+        /* margin-left: 10%;
+        margin-right: 10%; */
         display: grid;
         grid-area: tutorial;
         grid-template-areas: 

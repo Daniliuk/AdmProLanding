@@ -38,11 +38,11 @@
         /* background-color: #FA8072; */
         display: grid;
         margin-left: 3%;
-        /* margin-right: 10%; */
+        margin-right: 2%;
         grid-area: subscript;
         grid-template-areas:
-            "textBox textBox textBox"
-            "buttonBox imageBox imageBox";
+            "SLeft textBox textBox textBox"
+            "SLeft buttonBox imageBox imageBox";
         grid-template-rows: 0.5fr 3fr;
         gap: 1%;
         padding: 1%;
@@ -137,3 +137,38 @@ h3{
     rgba(255,94,247,1) 17.8%, 
     rgba(2,245,255,1) 100.2%);;
 }
+
+.LeftBox{
+    grid-area: SLeft;
+    /* background-color: rgba(2,245,255,1); */
+    /* max-width: 100%; */
+    width: 300px;
+    border: solid;
+    border-radius: 10px;
+    height: auto;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    .LeftBox {
+        grid-area: SLeft;
+        /* background-color: rgba(2,245,255,1); */
+        /* max-width: 100%; */
+        width: 0;
+        border: none;
+        border-radius: 10px;
+        height: 0;
+        margin-left: 0;
+      }
+}
+
+.LeftImgWrapper {
+    /* position: relative; */
+    justify-self: center;
+  }
+  
+  .LeftImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
