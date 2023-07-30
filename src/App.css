@@ -3,12 +3,8 @@
     .MainAppContainer {
         display: grid;
         grid-template-areas:
-            /* "header header header"
-            "description description description"
-            "tutorial tutorial tutorial"
-            "subscript subscript subscript"
-            "aboutUs aboutUs aboutUs"; */
             "header"
+            "testing"
             "description"
             "tutorial"
             "subscript"
