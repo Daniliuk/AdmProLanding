@@ -1,11 +1,7 @@
 
 /* -------------------------- */
     .TutorialContainer{
-        /* background-color: #008080; */
-        /* background-color: rgba(185, 184, 181, 64); */
         background-color: #f4f7fc;
-        /* margin-left: 10%;
-        margin-right: 10%; */
         display: grid;
         grid-area: tutorial;
         grid-template-areas: 
@@ -13,12 +9,6 @@
         "tutorialText tutorialText tutorialText"
         ". tutorialButton .";
         grid-auto-rows: 1fr 0.25fr 0.3fr;
-        gap: 5%;
-        padding: 1%;
-        /*border: solid;
-        border-color: #9c4598;
-        border-radius: 10px;
-        box-shadow: 5px 8px 4px rgba(2,245,255,1);  */
     }
 
 @media screen and (max-width: 767px) {

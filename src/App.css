@@ -1,19 +1,11 @@
 
 /* ------------------- */
-    .MainAppContainer {
+    .MainApp {
         display: grid;
-        grid-template-areas:
-            "header"
-            "testing"
-            "description"
-            "tutorial"
-            "subscript"
-            "aboutUs"
-            "footer";
-        /* grid-template-rows:
-            auto auto; */
-        /* gap: 1.2%; */
-        row-gap: 1%;
+        grid-template-areas: 
+        "header"
+        "layout";
+        row-gap: 0.5%;
     }
 
 

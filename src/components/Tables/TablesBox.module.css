@@ -1,0 +1,27 @@
+.TablesContainer{
+    background-color: #e7eeb3;
+    grid-area: tables;
+    display: grid;
+    grid-template-areas: 
+    "Ltext imgBox Rtext";
+    grid-template-columns: 1fr 2.25fr 1fr;
+    grid-template-rows: 460px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+.LeftTextBox{
+background-color: #ddf04e;
+grid-area: Ltext;
+}
+
+.ImgBox{
+    background-color: #767c44;
+    grid-area: imgBox;
+}
+
+.RightTextBox{
+    background-color: #ddf04e;
+    grid-area: Rtext;
+}

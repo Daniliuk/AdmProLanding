@@ -12,8 +12,7 @@ import { Route, Link, Routes } from "react-router-dom";
 
 function App() {
   return (
-    // <div className="MainAppContainer">
-    <div>
+    <div className="MainApp">
       <HeaderBox />
       <Routes>
           <Route path="/" element={<LayoutPage />} />

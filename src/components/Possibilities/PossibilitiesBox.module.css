@@ -1,0 +1,32 @@
+.PossibilitiesContainer{
+    grid-area: possibilities;
+    display: grid;
+    grid-template-areas: 
+    "caption caption"
+    "tabsList tabsList"
+    "textBox imgBox";
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: max-content max-content 520px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.Сaption{
+    background-color: #87e78f;
+grid-area: caption;
+}
+
+.TabsList{
+    background-color: #69b26f;
+    grid-area: tabsList;
+}
+
+.TextBox{
+    background-color: #1fe730;
+    grid-area: textBox;
+}
+
+.ImgBox{
+    background-color: #178120;
+    grid-area: imgBox
+}
