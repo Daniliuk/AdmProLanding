@@ -1,27 +1,125 @@
-.TablesContainer{
+@font-face {
+  font-family: "Oswald-head";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Oswald-paragraph";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-medium";
+    src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Medium.ttf);
+}
+
+.TablesContainer {
+  background-color: #f4f7fc;
+  grid-area: tables;
+  display: grid;
+  grid-template-areas:
+    "head"
+    "content";
+  grid-template-rows: 1fr 6fr;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 5%;
+}
+
+.ContentBox {
+  grid-area: content;
+  display: grid;
+  grid-template-areas: "Ltext imgBox Rtext";
+  grid-template-columns: 1fr 2.25fr 1fr;
+  column-gap: 1%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 1023px) {
+  .TablesContainer {
+    grid-template-rows: 0.2fr 2fr;
+    /* row-gap: 5%; */
+    margin-bottom: 1%;
+  }
+  .ContentBox {
+    grid-template-areas:
+      "Ltext"
+      "imgBox"
+      "Rtext";
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto max-content;
+    /* row-gap: 1%; */
+  }
+  .ImgBox {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}
+.HeadTextBox {
+  grid-area: head;
+}
+
+.HeadText {
+  font-family: "Oswald-head";
+  font-size: 40px;
+  color: #000000;
+  text-align: center;
+  /* line-height: 72px; */
+  /* letter-spacing: 2px; */
+}
+
+.LeftTextBox {
+  grid-area: Ltext;
+  display: grid;
+  grid-template-areas:
+    "LUp"
+    "LMid"
+    "LDown";
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.RightTextBox {
+  grid-area: Rtext;
+  display: grid;
+  grid-template-areas:
+    "RUp"
+    "RMid"
+    "RDown";
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1023px) {
+  .LeftTextBox{
+    grid-template-areas:
+    "LUp LMid LDown";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .RightTextBox{
+    grid-template-areas:
+    "RUp RMid RDown";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.ImgBox {
+  grid-area: imgBox;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+/* .TablesContainer{
     background-color: #e7eeb3;
-    grid-area: tables;
-    display: grid;
-    grid-template-areas: 
-    "Ltext imgBox Rtext";
-    grid-template-columns: 1fr 2.25fr 1fr;
-    grid-template-rows: 460px;
-    margin-left: 4%;
-    margin-right: 4%;
 }
-
-
 .LeftTextBox{
-background-color: #ddf04e;
-grid-area: Ltext;
+    background-color: #ddf04e;
 }
-
 .ImgBox{
     background-color: #767c44;
-    grid-area: imgBox;
 }
-
 .RightTextBox{
     background-color: #ddf04e;
-    grid-area: Rtext;
-}
+} */

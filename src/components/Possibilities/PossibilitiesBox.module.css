@@ -1,32 +1,77 @@
+@font-face {
+    font-family: "Oswald-head";
+    src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-paragraph";
+    src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
+}
+
 .PossibilitiesContainer{
     grid-area: possibilities;
     display: grid;
     grid-template-areas: 
-    "caption caption"
-    "tabsList tabsList"
-    "textBox imgBox";
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: max-content max-content 520px;
+    "head"
+    "selictor";
     margin-left: 4%;
     margin-right: 4%;
+    margin-bottom: 5%;
 }
 
-.Сaption{
-    background-color: #87e78f;
-grid-area: caption;
+
+.ContentBox{
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+    "textBox imgBox";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
 }
 
-.TabsList{
-    background-color: #69b26f;
-    grid-area: tabsList;
+
+
+.HeadBox{
+grid-area: head;
+}
+
+.HeadText{
+    font-family: "Oswald-head";
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.SelectorBox{
+    grid-area: selictor;
 }
 
 .TextBox{
-    background-color: #1fe730;
     grid-area: textBox;
 }
 
+.Paragraph{
+    font-family: "Oswald-paragraph";
+    font-size: 26px;
+}
+
 .ImgBox{
-    background-color: #178120;
     grid-area: imgBox
 }
+
+/* -------------- */
+/* .HeadBox{
+    background-color: #87e78f;
+    }
+    
+    .SelectorBox{
+        background-color: #69b26f;
+    }
+    
+    .TextBox{
+        background-color: #1fe730;
+    }
+    
+    .ImgBox{
+        background-color: #178120;
+    } */

@@ -1,144 +1,183 @@
-/* ------------------------ */
-
-.DescriptionContainer {
-  /* background-color: #8b84bc; */
-  display: grid;
-  grid-area: description;
-  display: grid;
-    grid-template-areas:
-    "imageBox textBox"
-    "imageBox buttonBox"
-    "imageBox subtext";
-  grid-template-columns: 2fr 1fr;
-  /* grid-row: 171px; */
-  grid-auto-rows: 171px;
-  grid-row: auto;
-  padding-left: 5%;
-  padding-right: 10%;
+@font-face {
+  font-family: "Oswald-head";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
 }
 
-/* @media screen and (max-width: 1023px) {
-  .DescriptionContainer {
-      grid-template-areas:
-      "textBox textBox textBox"
-      "imageBox imageBox buttonBox";
-      grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr 3fr;
-  }
+@font-face {
+  font-family: "Oswald-paragraph";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
 }
 
-@media screen and (max-width: 767px) {
+@font-face {
+  font-family: "Oswald-medium-button";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Medium.ttf);
+}
+
   .DescriptionContainer {
-    margin-left: 3%;
-    margin-right: 3%;
+    display: grid;
     grid-area: description;
-    grid-template-areas:
-      "textBox textBox textBox"
-      "imageBox imageBox imageBox"
-      ". buttonBox .";
-    grid-template-rows: 1fr 3fr 1fr;
+    display: grid;
+    grid-template-areas: "imageBox content";
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-rows: 171px; */
+    /* grid-row: auto; */
+    padding-left: 5%;
+    padding-right: 5%;
+    column-gap: 1%;
+    margin-bottom: 5%;
   }
-} */
+  
+  .ContentBox {
+    grid-area: content;
+    display: grid;
+    grid-template-areas:
+      "headText"
+      "button"
+      "subText";
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+  
+  @media screen and (max-width: 767px){
+      .DescriptionContainer {
+          grid-template-areas: 
+          "imageBox"
+          "content";
+          grid-template-columns: 1fr;
+      }
+      .ContentBox {
+          row-gap: 5%;
+      }
+      .ImageBox {
+          display: grid;
+          justify-content: center;
+      }
+  }
+  
+  .TextBox {
+    padding: 2%;
+    grid-area: headText;
+  }
+  
+  .ButtonBox {
+    display: flex;
+    justify-content: center;
+    grid-area: button;
+  }
+  
+  .SubTextBox {
+    padding: 2%;
+    grid-area: subText;
+  }
 
-h1 {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 28px;
-  color: #000000;
-  text-align: center;
-}
-.TextBox {
-  padding: 2%;
-  grid-area: textBox;
-}
-
-.SubTextBox{
-  padding: 2%;
-  grid-area: subtext;
-}
-.SubText{
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 28px;
-  color: #000000;
-  text-align: center;
-}
-
-.ImageBox {
-  /* max-width: 100%; */
-  /* height: auto; */
-  grid-area: imageBox;
-  /* justify-self: center; */
-} 
-/* .ImageBox {
-  max-width: 100%;
-  height: auto;
-  grid-area: imageBox;
-  justify-self: center;
-} */
-
-/* .PicturDescription {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-} */
-
-.ButtonBox {
-  display: grid;
-  place-items: center;
-  grid-area: buttonBox;
-}
-
-.DiscriptionButton {
-  /* width: 165px;
-  height: 62px; */
-  width: 265px;
-  height: 100px;
-  cursor: pointer; /* загуглить */
-  color: #fff;
-  font-size: 17px;
-  border-radius: 1rem;
-  border: none;
-  position: relative; /* загуглить */
-  background: #100720;
-}
-
-.DiscriptionButton::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(255, 94, 247, 1) 17.8%,
-    rgba(2, 245, 255, 1) 100.2%
-  );
-  filter: blur(15px);
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.DiscriptionButton:active {
-  transform: scale(0.9) rotate(3deg);
-  background: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(255, 94, 247, 1) 17.8%,
-    rgba(2, 245, 255, 1) 100.2%
-  );
-}
-
-/* backgroundColor */
-
-.TextBox {
-  background-color: #7d6bf3;
-}
-.ButtonBox {
-  background-color: #290bea;
-}
-.ImageBox {
-  background-color: #b2aae6;
-} 
-.SubTextBox{
-  background-color: #5347a3;
-}
-
-
+  
+  .HeadText {
+    /* font-family: "ITF Devangari", serif; */
+    font-family: "Oswald-head";
+    font-size: 40px;
+    color: #000000;
+    text-align: right;
+    line-height: 44px;
+    /* letter-spacing: 2px; */
+  }
+  .SubText {
+      margin-right: 10%;
+      /* font-family: "ITF Devangari", serif; */
+      font-family: "Oswald-paragraph";
+      font-size: 24px;
+    color: #000000;
+    text-align: left;
+    line-height: 28px;
+    /* letter-spacing: -1px; */
+  }
+  
+  .ImageBox {
+    /* max-width: 100%; */
+    /* height: auto; */
+    grid-area: imageBox;
+    /* justify-self: center; */
+  }
+  /* .ImageBox {
+      max-width: 100%;
+      height: auto;
+      grid-area: imageBox;
+      justify-self: center;
+    } */
+  
+  /* .PicturDescription {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    } */
+  
+  .DiscriptionButton {
+    /* width: 165px;
+      height: 62px; */
+    width: 480px;
+    height: 110px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    font-family: "Oswald-medium-button";
+    background: #481173;
+  }
+  
+  .DiscriptionButton:hover{
+      width: 470px;
+      height: 105px;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .DiscriptionButton {
+      width: 340px;
+      height: 90px;
+      font-size: 21px;
+    }
+    .DiscriptionButton:hover{
+      width: 330px;
+      height: 85px;
+  }
+  }
+  
+  .DiscriptionButton::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 94, 247, 1) 17.8%,
+      rgba(2, 245, 255, 1) 100.2%
+    );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .DiscriptionButton:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 94, 247, 1) 17.8%,
+      rgba(2, 245, 255, 1) 100.2%
+    );
+  }
+  
+  /* backgroundColor */
+  
+  /* .TextBox {
+      background-color: #7d6bf3;
+    }
+    .ButtonBox {
+      background-color: #290bea;
+    }
+    .ImageBox {
+      background-color: #b2aae6;
+    } 
+    .SubTextBox{
+      background-color: #5347a3;
+    } */

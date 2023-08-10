@@ -1,25 +1,22 @@
-import PossibilitiesCss from './PossibilitiesBox.module.css'
+import BasicTabs from "./PossibComonents/Tabs";
+import PossibilitiesCss from "./PossibilitiesBox.module.css";
+
+// -----------------
 
 function PossibilitiesBox() {
-    return (
-        <div className={PossibilitiesCss.PossibilitiesContainer}>
-                <div className={PossibilitiesCss.Сaption}>
-                    возможности
-                </div>
+  return (
+    <div className={PossibilitiesCss.PossibilitiesContainer}>
+      <div className={PossibilitiesCss.HeadBox}>
+        <div className={PossibilitiesCss.HeadText}>Возможности</div>
+      </div>
 
-                <div className={PossibilitiesCss.TabsList}>
-                    слайдер
-                </div>
-
-                <div className={PossibilitiesCss.TextBox}>
-                    Text
-                </div>
-                <div className={PossibilitiesCss.ImgBox}>
-                    img
-                </div>
+      <div className={PossibilitiesCss.SelectorBox}>
+        <div className={PossibilitiesCss.SelectorWrapper}>
+          <BasicTabs/>
         </div>
-
-    );
+      </div>
+    </div>
+  );
 }
 
 export default PossibilitiesBox;

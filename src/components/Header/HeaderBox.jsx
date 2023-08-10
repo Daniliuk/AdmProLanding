@@ -2,6 +2,7 @@ import HeaderCss from './HeaderBox.module.css'
 import DropMenu from './DropMenu.svg'
 import {Link} from "react-router-dom";
 // import Logo from './BetaLogo.jpg'
+import MenuIcon from '@mui/icons-material/Menu'
 
 
 function HeaderBox() {
@@ -10,7 +11,6 @@ function HeaderBox() {
             <div className={HeaderCss.LogoBox}>
                 <Link to="/">
                 <div className={HeaderCss.LogoForm}>
-                    {/* <img src={Logo} alt="Logo" className={HeaderCss.LogoImg}/> */}
                 </div>
                 </Link>
             </div>
@@ -21,7 +21,8 @@ function HeaderBox() {
             </div>
             <div className={HeaderCss.MenuBox}>
                 <div className={HeaderCss.MenuForm}>
-                    <img src={DropMenu} alt="" />
+                    <MenuIcon/>
+                    {/* <img src={DropMenu} alt="" /> */}
                 </div>
             </div>
 

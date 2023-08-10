@@ -1,141 +1,107 @@
-/* .AboutUsContainer{
-    background-color: #87CEEB;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px 4%;
-    padding: 1%;
-} */
-/* .Top{
-    background-color: #14b0ed;
-    margin-bottom: 1%;
+@font-face {
+  font-family: "Oswald-head";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
 }
-.Bottom{
-    background-color: #638998;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 5%;
-} */
-/* .ImageBox{
-    background-image: url("./AboutAsCat.jpeg") ;
-    width: 703px;
-    height: 463px;
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
-} */
-/* .ButtonBox{
-    display: grid;
-    place-items: center;
-    background-color: #035d80;
-} */
 
-/* --------------------------- */
-
+.AboutUsContainer {
+  display: grid;
+  grid-area: aboutUs;
+  grid-template-areas: "buttonBox content";
+  grid-template-columns: 1fr 5fr;
+  padding-left: 4%;
+  padding-right: 4%;
+  column-gap: 2%;
+  margin-bottom: 5%;
+}
+.ContentBox {
+  grid-area: content;
+  display: grid;
+  grid-template-areas:
+    "imageBox"
+    "textBox";
+  grid-template-rows: 3fr 1fr;
+}
+@media screen and (max-width: 1024px) {
     .AboutUsContainer {
-        /* background-color: #87CEEB; */
-        display: grid;
-        margin-left: 10%;
-        margin-right: 10%;
-        grid-area: aboutUs;
-        grid-template-areas: 
-        "buttonBox imageBox imageBox"
-        "buttonBox textBox textBox";
-        grid-template-rows: 1fr 0.3fr;
-        gap: 1%;
-        padding: 1%;
-        /* border: solid;
-        border-color: #9c4598;
-        border-radius: 10px;
-        box-shadow: 5px 8px 4px rgba(2,245,255,1);   */
+        margin-top: 3%;
+        column-gap: 5%;
     }
-
+}
+@media screen and (max-width: 877px) {
+    .ContentBox {
+        grid-template-rows: 2fr 1fr;
+      }
+}
 @media screen and (max-width: 767px) {
-    .AboutUsContainer {
-        margin-left: 3%;
-        margin-right: 3%;
-        display: grid;
-        grid-area: aboutUs;
-        grid-template-areas:
-        "textBox textBox textBox"
-        "imageBox imageBox imageBox"
-        ". buttonBox .";
-        grid-template-rows: 1fr 2fr 1fr;
-    }
+  .AboutUsContainer {
+    grid-template-areas:
+      "content"
+      "buttonBox";
+    grid-template-columns: 1fr;
+    grid-template-rows: 9fr 1fr;
+    margin-top: 6%;
+  }
+
 }
 
-h4{
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 28px;
-    color: #000000;
-    text-align: center;
+.HedText {
+  font-family: "Oswald-head";
+  font-size: 40px;
+  text-align: center;
+  line-height: 44px;
 }
 
 .TextBox {
-    padding: 2%;
-    /* background-color: #14b0ed; */
-    /* margin-bottom: 1%; */
-    grid-area: textBox;
+  grid-area: textBox;
 }
 
 .ImageBox {
-    /* background-image: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/src/Components/Description/svgTesting.png); */
-    max-width: 80%;
-    height: auto;
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: inline-block; */
-    grid-area: imageBox;
-    justify-self: center;
-}
-
-
-.PicturAboutUs{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  grid-area: imageBox;
+  display: grid;
+  place-items: center;
+  margin-bottom: 2%;
 }
 
 .ButtonBox {
-    display: grid;
-    place-items: center;
-    /* background-color: #290bea; */
-    grid-area: buttonBox;
+  display: grid;
+  place-items: center;
+  grid-area: buttonBox;
 }
 
-.AboutUsButton{
-    width: 165px;
-    height: 62px;
-    cursor: pointer; /* загуглить */
-    color: #fff;
-    font-size: 17px;
-    border-radius: 1rem;
-    border: none;
-    position: relative; /* загуглить */
-    background: #100720;
+.AboutUsButton {
+  width: 165px;
+  height: 62px;
+  cursor: pointer; /* загуглить */
+  color: #fff;
+  font-size: 22px;
+  border-radius: 1rem;
+  border: none;
+  position: relative; /* загуглить */
+  font-family: "Oswald-medium-button";
+  background: #481173;
 }
 
-.AboutUsButton::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient( circle 
-                      farthest-corner at 10% 20%, 
-                      rgba(255,94,247,1) 17.8%, 
-                      rgba(2,245,255,1) 100.2%);
-    filter: blur(15px);
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
+.AboutUsButton::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 94, 247, 1) 17.8%,
+    rgba(2, 245, 255, 1) 100.2%
+  );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.AboutUsButton:active{
-    transform: scale(0.9) rotate(3deg);
-    background: radial-gradient( circle 
-    farthest-corner at 10% 20%, 
-    rgba(255,94,247,1) 17.8%, 
-    rgba(2,245,255,1) 100.2%);;
+.AboutUsButton:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 94, 247, 1) 17.8%,
+    rgba(2, 245, 255, 1) 100.2%
+  );
 }

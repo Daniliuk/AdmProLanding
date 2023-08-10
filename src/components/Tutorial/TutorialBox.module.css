@@ -1,7 +1,6 @@
 
 /* -------------------------- */
     .TutorialContainer{
-        background-color: #f4f7fc;
         display: grid;
         grid-area: tutorial;
         grid-template-areas: 

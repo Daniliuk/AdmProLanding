@@ -1,14 +1,79 @@
 .FooterContainer{
     grid-area: footer;
     max-width: 100%;
-    height: 300px;
-    background-color: brown;
-    
+    /* height: 300px; */
+    margin-top: -3%;
+    display: grid;
+    grid-template-areas:
+    "conclusion"
+    "reports" ;
+    grid-template-rows: 2fr 1fr;
 }
+
+.ConclusionContainer {
+    grid-area: conclusion;
+    max-width: 100%;
+    height: 500px;
+    /* background-color: rgb(105, 98, 245); */
+    display: grid;
+    place-items: center;
+    background-image: url(https://picsum.photos/seed/picsum/3840/2160);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .ConclusionButton {
+    /* width: 165px;
+        height: 62px; */
+    width: 480px;
+    height: 110px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    font-family: "Oswald-medium-button";
+    background: #481173;
+  }
+  
+  .ConclusionButton:hover {
+    width: 470px;
+    height: 105px;
+  }
+  
+  .ConclusionButton::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 94, 247, 1) 17.8%,
+      rgba(2, 245, 255, 1) 100.2%
+    );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .ConclusionButton:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 94, 247, 1) 17.8%,
+      rgba(2, 245, 255, 1) 100.2%
+    );
+  }
+
 .ReportContainer{
+    grid-area: reports;
+    background-color: #7E40E3;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 28px;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    margin-top: 10%;
 }

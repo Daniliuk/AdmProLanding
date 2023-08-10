@@ -7,9 +7,10 @@
         "description"
         "tables"
         "possibilities"
-        "tutorial"
+        /* "tutorial" */
         "subscript"
         "aboutUs"
+        /* "conclusion" */
         "footer";
-    row-gap: 0.5%;
+    row-gap: 1%;
 }
