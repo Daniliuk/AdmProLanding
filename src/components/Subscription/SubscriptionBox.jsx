@@ -1,43 +1,45 @@
 import SubscriptionCss from "./SubscriptionBox.module.css";
-import PicturSubscription from "./svgTesting.png";
-import { Link } from "react-router-dom";
+import winer from "./winer1.svg";
+import master from './Master1.svg';
+import chempion from './Champion1.svg'
 
 function SubscriptionBox() {
   return (
-    <div className={SubscriptionCss.SubscriptionContainer}>
-      <div className={SubscriptionCss.TextBox}>
-        <h3>
-          Оформите подписку, чтобы получить все примущества Adm.Pro. Каждый
-          найдет для себя то, что подходит именно ему!{" "}
-        </h3>
+    <div className={SubscriptionCss.SubsPageContainer}>
+      <div className={SubscriptionCss.Sub1}>
+        <div className={SubscriptionCss.SubPost}>
+          <div className={SubscriptionCss.DescriptSub}>
+            <img src={winer} alt="" />
+          </div>
+          <div className={SubscriptionCss.ButtonBox}>
+            <a href="https://admp.pro/">
+              <button className={SubscriptionCss.ButtonDesign}>Оформить</button>
+            </a>
+          </div>
+        </div>
       </div>
-      <div className={SubscriptionCss.ImageBox}>
-        <img
-          className={SubscriptionCss.PicturSubscription}
-          src={PicturSubscription}
-          alt=""
-        />
+      <div className={SubscriptionCss.Sub2}>
+        <div className={SubscriptionCss.SubPost}>
+          <div className={SubscriptionCss.DescriptSub}>
+          <img src={master} alt="" />
+          </div>
+          <div className={SubscriptionCss.ButtonBox}>
+          <a href="https://admp.pro/">
+              <button className={SubscriptionCss.ButtonDesign}>Оформить</button>
+            </a>          
+          </div>
+        </div>
       </div>
-
-      <div className={SubscriptionCss.ButtonBox}>
-        <Link to="SubsPage">
-          <button className={SubscriptionCss.SubscriptionButton}>
-            Link on the Subscriptions
-          </button>
-        </Link>
-      </div>
-
-      {/* <div className={SubscriptionCss.LImageBox}>
-        <img
-          className={SubscriptionCss.PicturSubscription}
-          src={PicturSubscription}
-          alt=""
-        />
-      </div> */}
-
-      <div className={SubscriptionCss.LeftBox}>
-        <div className={SubscriptionCss.LeftImgWrapper}>
-          <img className={SubscriptionCss.LeftImg} src="https://picsum.photos/400/700" alt="" />
+      <div className={SubscriptionCss.Sub3}>
+        <div className={SubscriptionCss.SubPost}>
+          <div className={SubscriptionCss.DescriptSub}>
+          <img src={chempion} alt="" />
+          </div>
+          <div className={SubscriptionCss.ButtonBox}>
+          <a href="https://admp.pro/">
+              <button className={SubscriptionCss.ButtonDesign}>Оформить</button>
+            </a>         
+             </div>
         </div>
       </div>
     </div>

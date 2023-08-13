@@ -6,7 +6,6 @@ import HeaderBox from "./components/Header/HeaderBox.jsx";
 // import AboutUsBox from "./MainPage/AboutUs/AboutUsBox.jsx";
 // import FooterBox from "./MainPage/Footer/FooterBox.jsx";
 import TestingBox from "./components/Testing/TestingBox";
-import SubsPageBox from "./pages/SubscriptionsPage/SubsPage.jsx";
 import LayoutPage from "./Layout/Layout.jsx";
 import { Route, Link, Routes } from "react-router-dom";
 
@@ -16,7 +15,6 @@ function App() {
       <HeaderBox />
       <Routes>
           <Route path="/" element={<LayoutPage />} />
-          <Route path="/SubsPage" element={<SubsPageBox/>}/>
       </Routes>
     </div>
   );

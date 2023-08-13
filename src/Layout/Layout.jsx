@@ -7,7 +7,6 @@ import AboutUsBox from "../components/AboutUs/AboutUsBox.jsx";
 import FooterBox from "../components/Footer/FooterBox.jsx";
 import LayoutPageCss from "./Layout.module.css";
 import TestingBox from "../components/Testing/TestingBox.jsx";
-import SubsPageBox from "../pages/SubscriptionsPage/SubsPage.jsx";
 import { Route, Link, Routes } from "react-router-dom";
 
 
@@ -19,8 +18,7 @@ function LayoutPage() {
       <TablesBox />
       <PossibilitiesBox/>
       {/* <TutorialBox /> */}
-      <SubsPageBox />
-      {/* <SubscriptionBox /> */}
+      <SubscriptionBox />
       <AboutUsBox />
       <FooterBox />
     </div>

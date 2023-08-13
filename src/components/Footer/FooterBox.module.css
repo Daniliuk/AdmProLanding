@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Oswald-extraLight";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-ExtraLight.ttf);
+}
+
 .FooterContainer{
     grid-area: footer;
     max-width: 100%;
@@ -24,6 +34,20 @@
     background-size: cover;
   }
 
+  .TextBox{
+width: 50%;
+  }
+  .Text{
+    font-family: "Oswald-Regular";
+    font-size: 36px;
+    line-height: 40px;
+    color: #481173;
+    text-align: center;
+
+  }
+
+
+
   .ConclusionButton {
     /* width: 165px;
         height: 62px; */
@@ -40,8 +64,8 @@
   }
   
   .ConclusionButton:hover {
-    width: 470px;
-    height: 105px;
+    width: 483px;
+    height: 113px;
   }
   
   .ConclusionButton::after {
@@ -71,9 +95,28 @@
 
 .ReportContainer{
     grid-area: reports;
-    background-color: #7E40E3;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 28px;
-    color: #ffffff;
-    text-align: center;
+    background-color: #481173;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.AboutCompanyBox{
+  font-family: "Oswald-extraLight";
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ContactsBox{
+  font-family: "Oswald-extraLight";
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ReportBox{
+  font-family: "Oswald-extraLight";
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
 }

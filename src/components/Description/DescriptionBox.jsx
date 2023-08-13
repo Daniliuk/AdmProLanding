@@ -1,5 +1,6 @@
 import DescriptionCss from "./DescriptionBox.module.css";
 import PicturDescription from "./svgTesting.png";
+import DescImg from './DescriptonImgDesck3.svg'
 import PicR from "./Frame 1.svg";
 
 function DescriptionBox() {
@@ -8,7 +9,8 @@ function DescriptionBox() {
       <div className={DescriptionCss.ImageBox}>
         <img
           className={DescriptionCss.PicturDescription}
-          src={PicturDescription}
+          // src={PicturDescription}
+          src={DescImg}
           alt=""
         />
       </div>
@@ -17,7 +19,7 @@ function DescriptionBox() {
       <div className={DescriptionCss.ContentBox}>
         <div className={DescriptionCss.TextBox}>
           <div className={DescriptionCss.HeadText}>
-            Adm.Pro - телеграмм-бот для управления рекламой и аналитики на
+            Admp.Pro - телеграмм-бот для управления рекламой и аналитики на
             Wildberries
           </div>
         </div>
@@ -32,7 +34,7 @@ function DescriptionBox() {
 
         <div className={DescriptionCss.SubTextBox}>
           <div className={DescriptionCss.SubText}>
-          Повышайте эффективность своей рекламы бесплатно в течении!
+          Повысьте эффективность своей рекламы бесплатно, в течении недели!
           </div>
         </div>
       </div>

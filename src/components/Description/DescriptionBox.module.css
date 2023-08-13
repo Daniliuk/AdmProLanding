@@ -63,6 +63,8 @@
     display: flex;
     justify-content: center;
     grid-area: button;
+    margin-top: 5%;
+    margin-bottom: 3%;
   }
   
   .SubTextBox {
@@ -95,26 +97,14 @@
     /* max-width: 100%; */
     /* height: auto; */
     grid-area: imageBox;
+    display: grid;
+    align-content: center;
     /* justify-self: center; */
   }
-  /* .ImageBox {
-      max-width: 100%;
-      height: auto;
-      grid-area: imageBox;
-      justify-self: center;
-    } */
-  
-  /* .PicturDescription {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    } */
   
   .DiscriptionButton {
-    /* width: 165px;
-      height: 62px; */
-    width: 480px;
-    height: 110px;
+    width: 450px;
+    height: 90px;
     cursor: pointer;
     color: #fff;
     font-size: 26px;
@@ -126,19 +116,19 @@
   }
   
   .DiscriptionButton:hover{
-      width: 470px;
-      height: 105px;
+      width: 453px;
+      height: 93px;
   }
   
   @media screen and (max-width: 1023px) {
     .DiscriptionButton {
       width: 340px;
-      height: 90px;
+      height: 85px;
       font-size: 21px;
     }
     .DiscriptionButton:hover{
-      width: 330px;
-      height: 85px;
+      width: 343px;
+      height: 88px;
   }
   }
   

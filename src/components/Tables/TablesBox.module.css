@@ -74,9 +74,8 @@
   display: grid;
   grid-template-areas:
     "LUp"
-    "LMid"
     "LDown";
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .RightTextBox {
@@ -84,23 +83,23 @@
   display: grid;
   grid-template-areas:
     "RUp"
-    "RMid"
     "RDown";
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 @media screen and (max-width: 1023px) {
   .LeftTextBox{
     grid-template-areas:
-    "LUp LMid LDown";
+    "LUp LDown";
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   }
   .RightTextBox{
     grid-template-areas:
-    "RUp RMid RDown";
+    "RUp RDown";
+
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -109,6 +108,9 @@
   display: grid;
   justify-items: center;
   align-content: center;
+  /* border: solid;
+  border-radius: 17px;
+  border-color: #481173; */
 }
 
 /* .TablesContainer{

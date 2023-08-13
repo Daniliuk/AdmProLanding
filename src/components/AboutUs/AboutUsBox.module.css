@@ -3,6 +3,11 @@
   src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Oswald-paragraph";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
+}
+
 .AboutUsContainer {
   display: grid;
   grid-area: aboutUs;
@@ -17,7 +22,8 @@
   grid-area: content;
   display: grid;
   grid-template-areas:
-    "imageBox"
+    /* "imageBox" */
+    "WorkerCards"
     "textBox";
   grid-template-rows: 3fr 1fr;
 }
@@ -104,4 +110,38 @@
     rgba(255, 94, 247, 1) 17.8%,
     rgba(2, 245, 255, 1) 100.2%
   );
+}
+
+/* ----------WORCERS CARDS--------- */
+
+.WorkerCardsContainer{
+grid-area: WorkerCards;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+
+.CardContainer{
+display: grid;
+grid-template-areas:
+"photo"
+"caption";
+grid-template-rows: 3fr 1fr;
+}
+
+.PhotoBox{
+ grid-area: photo;
+}
+
+.CaptionBox{
+grid-area: caption;
+}
+
+.Name{
+  font-family: "Oswald-head";
+  font-size: 24px;
+}
+
+.Lable{
+  font-family: "Oswald-paragraph";
+  font-size: 22px;
 }
