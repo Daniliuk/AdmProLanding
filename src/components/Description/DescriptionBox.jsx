@@ -1,6 +1,7 @@
 import DescriptionCss from "./DescriptionBox.module.css";
 import PicturDescription from "./svgTesting.png";
-import DescImg from './DescriptonImgDesck3.svg'
+// import DescImg from './DescriptonImgDesck3.svg'
+import DescImg from './DescPhon4.svg'
 import PicR from "./Frame 1.svg";
 
 function DescriptionBox() {
@@ -14,7 +15,6 @@ function DescriptionBox() {
           alt=""
         />
       </div>
-
 
       <div className={DescriptionCss.ContentBox}>
         <div className={DescriptionCss.TextBox}>
@@ -34,7 +34,7 @@ function DescriptionBox() {
 
         <div className={DescriptionCss.SubTextBox}>
           <div className={DescriptionCss.SubText}>
-          Повысьте эффективность своей рекламы бесплатно, в течении недели!
+          Повысьте эффективность своей рекламы бесплатно, в течении двух недель!
           </div>
         </div>
       </div>

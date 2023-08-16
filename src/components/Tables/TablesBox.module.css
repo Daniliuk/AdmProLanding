@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Oswald-SemiHead";
+  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+@font-face {
   font-family: "Oswald-paragraph";
   src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
 }
@@ -14,7 +19,7 @@
 }
 
 .TablesContainer {
-  background-color: #f4f7fc;
+  /* background-color: #f4f7fc; */
   grid-area: tables;
   display: grid;
   grid-template-areas:
@@ -61,10 +66,12 @@
 }
 
 .HeadText {
-  font-family: "Oswald-head";
-  font-size: 40px;
-  color: #000000;
+  /* font-family: "Oswald-head"; */
+  font-family: "Oswald-SemiHead";
+  font-size: 38px;
+  color: #545252;
   text-align: center;
+  line-height: 42px;
   /* line-height: 72px; */
   /* letter-spacing: 2px; */
 }

@@ -7,12 +7,14 @@ function PossibilitiesBox() {
   return (
     <div className={PossibilitiesCss.PossibilitiesContainer}>
       <div className={PossibilitiesCss.HeadBox}>
-        <div className={PossibilitiesCss.HeadText}>Возможности</div>
+        <div className={PossibilitiesCss.HeadText}>
+          Возможности, которые превратите ваш рекламный бюджет в инвестицию!
+        </div>
       </div>
 
       <div className={PossibilitiesCss.SelectorBox}>
         <div className={PossibilitiesCss.SelectorWrapper}>
-          <BasicTabs/>
+          <BasicTabs />
         </div>
       </div>
     </div>

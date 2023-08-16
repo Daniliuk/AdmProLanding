@@ -1,8 +1,10 @@
 import BidderContentCss from "./Tabs.module.css";
-import img1 from "./8918702_4020767.svg";
-import img2 from "./11668491_20943599.jpg";
-import img3 from "./12953772_Jan-Business_report_1.jpg";
-import NoDisain from './FuckUp.svg'
+// import NoDisain from './FuckUp.svg'
+import BidderImg from './Posibili_Bidder.svg'
+import PhrasesImg from './Posibili_Phrases.svg'
+import StatisticImg from './Posibili_Statistic.svg'
+import GptImg from './Posibili_GPT.svg'
+
 
 export function BidderContent() {
   return (
@@ -12,12 +14,7 @@ export function BidderContent() {
       </div>
 
       <div className={BidderContentCss.ImgBox}>
-        {/* <img
-          className={BidderContentCss.Img}
-          src="https://picsum.photos/seed/picsum/580/580"
-          alt=""
-        /> */}
-        <img className={BidderContentCss.img1} src={NoDisain} alt="" />
+        <img className={BidderContentCss.img1} src={BidderImg} alt="" />
       </div>
     </div>
   );
@@ -33,12 +30,7 @@ export function SelectionPhrasesContent() {
       </div>
 
       <div className={BidderContentCss.ImgBox}>
-        {/* <img
-          className={BidderContentCss.Img}
-          src="https://picsum.photos/seed/picsum/580/580"
-          alt=""
-        /> */}
-        <img className={BidderContentCss.img2} src={NoDisain} alt="" />
+        <img className={BidderContentCss.img2} src={PhrasesImg} alt="" />
       </div>
     </div>
   );
@@ -54,12 +46,7 @@ export function StatisticsAnalysisContent() {
       </div>
 
       <div className={BidderContentCss.ImgBox}>
-        {/* <img
-          className={BidderContentCss.Img}
-          src="https://picsum.photos/seed/picsum/580/580"
-          alt=""
-        /> */}
-        <img className={BidderContentCss.img2} src={NoDisain} alt="" />
+        <img className={BidderContentCss.img2} src={StatisticImg} alt="" />
       </div>
     </div>
   );
@@ -73,12 +60,8 @@ export function ChatGPTContent() {
       </div>
 
       <div className={BidderContentCss.ImgBox}>
-        {/* <img
-          className={BidderContentCss.Img}
-          src="https://picsum.photos/seed/picsum/580/580"
-          alt=""
-        /> */}
-        <img className={BidderContentCss.img2} src={NoDisain} alt="" />
+
+        <img className={BidderContentCss.img2} src={GptImg} alt="" />
         
       </div>
     </div>

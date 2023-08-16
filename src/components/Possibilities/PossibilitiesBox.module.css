@@ -1,12 +1,20 @@
 @font-face {
     font-family: "Oswald-head";
-    src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
-}
-
-@font-face {
+    src: url("../../../fonts/Oswald/static/Oswald-Bold.ttf");
+    /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf); */
+  }
+  
+  @font-face {
     font-family: "Oswald-paragraph";
-    src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
-}
+    src: url("../../../fonts/Oswald/static/Oswald-Light.ttf");
+    /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf); */
+  }
+  
+  @font-face {
+    font-family: "Oswald-SemiHead";
+    src: url("../../../fonts/Oswald/static/Oswald-SemiBold.ttf");
+    /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-SemiBold.ttf); */
+  }
 
 .PossibilitiesContainer{
     grid-area: possibilities;
@@ -33,13 +41,16 @@
 
 .HeadBox{
 grid-area: head;
+margin-bottom: 5%;
+padding-left: 10%;
+padding-right: 10%;
 }
 
 .HeadText{
-    font-family: "Oswald-head";
-    font-size: 40px;
+    font-family: "Oswald-SemiHead";
+    font-size: 38px;
     text-align: center;
-
+    color: #545252;
 }
 
 .SelectorBox{

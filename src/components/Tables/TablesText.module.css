@@ -3,7 +3,7 @@
     src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Medium.ttf);
 }
 .HeadT{
-    text-align: center;
+    /* text-align: center; */
     font-family: "Oswald-medium";
     color: #481173;
     font-size: 26px;
@@ -12,7 +12,7 @@
     margin-bottom: 0;
 }
 .BodyT{
-    text-align: center;
+    /* text-align: center; */
     font-family: "Oswald-paragraph";
     font-size: 26px;
     line-height: 39px;
@@ -22,39 +22,30 @@
 .LeftTextUp {
     grid-area: LUp;
     margin-bottom: 3%;
-  }
-  .LeftTextMid {
-    grid-area: LMid;
-    margin-bottom: 3%;
-    margin-top: 3%;
+        text-align: left;
   }
   .LeftTextDown {
     grid-area: LDown;
     margin-top: 3%;
+    text-align: left;
   }
 
   .RightTextUp {
     grid-area: RUp;
     margin-bottom: 3%;
-  }
-  .RightTextMid {
-    grid-area: RMid;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    text-align: right;
+
   }
   .RightTextDown {
     grid-area: RDown;
     margin-top: 3%;
+    text-align: right;
+
   }
   
   @media screen and (max-width: 1023px) {
     .LeftTextUp {
       margin-bottom: 1%;
-      text-align: left;
-    }
-    .LeftTextMid {
-      margin-bottom: 1%;
-      margin-top: 1%;
       text-align: left;
     }
     .LeftTextDown {
@@ -63,15 +54,10 @@
     }
     .RightTextUp {
       margin-bottom: 1%;
-      text-align: right;
-    }
-    .RightTextMid {
-      margin-bottom: 1%;
-      margin-top: 1%;
-      text-align: right;
+      text-align: left;
     }
     .RightTextDown {
       margin-top: 1%;
-      text-align: right;
+      text-align: left;
     }
   }

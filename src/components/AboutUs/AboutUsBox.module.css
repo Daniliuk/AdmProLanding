@@ -1,60 +1,48 @@
 @font-face {
   font-family: "Oswald-head";
-  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
+  src: url("../../../fonts/Oswald/static/Oswald-Bold.ttf");
+  /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf); */
 }
 
 @font-face {
   font-family: "Oswald-paragraph";
-  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
+  src: url("../../../fonts/Oswald/static/Oswald-Light.ttf");
+  /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf); */
+}
+
+@font-face {
+  font-family: "Oswald-SemiHead";
+  src: url("../../../fonts/Oswald/static/Oswald-SemiBold.ttf");
+  /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-SemiBold.ttf); */
 }
 
 .AboutUsContainer {
   display: grid;
   grid-area: aboutUs;
-  grid-template-areas: "buttonBox content";
-  grid-template-columns: 1fr 5fr;
+  grid-template-areas:
+  /* "imageBox" */
+  "WorkerCards"
+  "textBox";
+grid-template-rows: 3fr 1fr;
   padding-left: 4%;
   padding-right: 4%;
-  column-gap: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
-.ContentBox {
-  grid-area: content;
-  display: grid;
-  grid-template-areas:
-    /* "imageBox" */
-    "WorkerCards"
-    "textBox";
-  grid-template-rows: 3fr 1fr;
-}
+
 @media screen and (max-width: 1024px) {
     .AboutUsContainer {
         margin-top: 3%;
         column-gap: 5%;
     }
 }
-@media screen and (max-width: 877px) {
-    .ContentBox {
-        grid-template-rows: 2fr 1fr;
-      }
-}
-@media screen and (max-width: 767px) {
-  .AboutUsContainer {
-    grid-template-areas:
-      "content"
-      "buttonBox";
-    grid-template-columns: 1fr;
-    grid-template-rows: 9fr 1fr;
-    margin-top: 6%;
-  }
-
-}
 
 .HedText {
-  font-family: "Oswald-head";
-  font-size: 40px;
+  font-family: "Oswald-SemiHead";  
+  color: #545252;
+  font-size: 38px;
   text-align: center;
-  line-height: 44px;
+  line-height: 42px;
 }
 
 .TextBox {
@@ -118,30 +106,24 @@
 grid-area: WorkerCards;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
+column-gap: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .WorkerCardsContainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5%;
+    }
 }
 
 .CardContainer{
-display: grid;
-grid-template-areas:
-"photo"
-"caption";
-grid-template-rows: 3fr 1fr;
+  margin-bottom: 10%;
+}
+.CardContainer:hover{
+  box-shadow: 6px 8px 6px #8a8a8a9d;
 }
 
-.PhotoBox{
- grid-area: photo;
-}
-
-.CaptionBox{
-grid-area: caption;
-}
-
-.Name{
-  font-family: "Oswald-head";
-  font-size: 24px;
-}
-
-.Lable{
-  font-family: "Oswald-paragraph";
-  font-size: 22px;
+.CardLable{
+ background-color: #c0a2d8;
 }

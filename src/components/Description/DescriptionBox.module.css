@@ -1,16 +1,19 @@
 @font-face {
   font-family: "Oswald-head";
-  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf);
+  src: url("../../../fonts/Oswald/static/Oswald-Bold.ttf");
+  /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Bold.ttf); */
 }
 
 @font-face {
   font-family: "Oswald-paragraph";
-  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf);
+  src: url("../../../fonts/Oswald/static/Oswald-Light.ttf");
+  /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Light.ttf); */
 }
 
 @font-face {
   font-family: "Oswald-medium-button";
-  src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Medium.ttf);
+  src: url("../../../fonts/Oswald/static/Oswald-Medium.ttf");
+  /* src: url(/Users/daniliyk/Documents/LendingAdmPro/admpro/fonts/Oswald/static/Oswald-Medium.ttf); */
 }
 
   .DescriptionContainer {
@@ -19,9 +22,7 @@
     display: grid;
     grid-template-areas: "imageBox content";
     grid-template-columns: 1fr 1fr;
-    /* grid-auto-rows: 171px; */
-    /* grid-row: auto; */
-    padding-left: 5%;
+    /* padding-left: 5%; */
     padding-right: 5%;
     column-gap: 1%;
     margin-bottom: 5%;
@@ -74,23 +75,19 @@
 
   
   .HeadText {
-    /* font-family: "ITF Devangari", serif; */
     font-family: "Oswald-head";
     font-size: 40px;
     color: #000000;
     text-align: right;
     line-height: 44px;
-    /* letter-spacing: 2px; */
   }
   .SubText {
       margin-right: 10%;
-      /* font-family: "ITF Devangari", serif; */
       font-family: "Oswald-paragraph";
       font-size: 24px;
     color: #000000;
     text-align: left;
     line-height: 28px;
-    /* letter-spacing: -1px; */
   }
   
   .ImageBox {
@@ -99,7 +96,7 @@
     grid-area: imageBox;
     display: grid;
     align-content: center;
-    /* justify-self: center; */
+    justify-self: center;
   }
   
   .DiscriptionButton {
@@ -116,8 +113,9 @@
   }
   
   .DiscriptionButton:hover{
-      width: 453px;
-      height: 93px;
+      /* width: 453px;
+      height: 93px; */
+      transform: scale(1.03);
   }
   
   @media screen and (max-width: 1023px) {
@@ -127,8 +125,9 @@
       font-size: 21px;
     }
     .DiscriptionButton:hover{
-      width: 343px;
-      height: 88px;
+      /* width: 343px;
+      height: 88px; */
+      transform: scale(1.03);
   }
   }
   
