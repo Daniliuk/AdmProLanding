@@ -3,7 +3,7 @@
     .MainApp {
         display: grid;
         grid-template-areas: 
-        "header"
+        /* "header" */
         "layout";
     }
 

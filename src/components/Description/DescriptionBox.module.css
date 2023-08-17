@@ -116,6 +116,7 @@
       /* width: 453px;
       height: 93px; */
       transform: scale(1.03);
+      transition: 0.5s;
   }
   
   @media screen and (max-width: 1023px) {
@@ -127,7 +128,8 @@
     .DiscriptionButton:hover{
       /* width: 343px;
       height: 88px; */
-      transform: scale(1.03);
+      /* transform: scale(1.03); */
+      transition: scale(1.03) 1s;
   }
   }
   

@@ -8,7 +8,7 @@ function PossibilitiesBox() {
     <div className={PossibilitiesCss.PossibilitiesContainer}>
       <div className={PossibilitiesCss.HeadBox}>
         <div className={PossibilitiesCss.HeadText}>
-          Возможности, которые превратите ваш рекламный бюджет в инвестицию!
+          Возможности, которые превратят ваш рекламный бюджет в инвестицию!
         </div>
       </div>
 
